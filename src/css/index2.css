@@ -1,0 +1,133 @@
+*{
+    padding:0;
+    margin:0;
+}
+.wrapper{
+    position: relative;
+    width: 100%;
+    background-color:khaki;
+}
+.game{
+    position:absolute;
+    left: 50%;
+    margin-left: -305px;
+    width: 610px;
+    height: 710px;
+    background-color: aquamarine;
+}
+.top{
+    height: 100px;  }
+.score{
+    width: 300px;
+    height: 100px;
+    float: left;
+    margin-left: 10px;
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 100px;
+}
+.start-pause{
+    width: 100px;
+    float: right;
+    height: 100px;
+    background-image: url('../image/pause.png');
+    -webkit-background-size:100%;
+    background-size:100%;
+    cursor: pointer;
+}
+.content{
+    width: 600px;
+    height: 600px;
+    border: 5px solid black;
+}
+.startGame{
+    position:absolute;
+    left: 50%;
+    margin-left: -305px;
+    width: 610px;
+    height: 710px;
+    background-color: rgba(0,0,0,0.2);
+}
+.startGame img{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+li{
+    list-style: none;
+    float: left;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+
+}
+.snakeHeadR{
+    background-image: url('../image/head.png');
+    background-size:100% 100%;
+}
+.snakeHeadL{
+    background-image: url('../image/head.png');
+    background-size:100% 100%;
+    transform: rotate(180deg);
+}
+.snakeHeadU{
+    background-image: url('../image/head.png');
+    background-size:100% 100%;
+    transform: rotate(270deg);
+}
+.snakeHeadD{
+    background-image: url('../image/head.png');
+    background-size:100% 100%;
+    transform: rotate(90deg);
+}
+.snakeBody{
+    background-image: url('../image/body.png');
+    background-size:100% 100%;
+}
+.food{
+    background-image: url('../image/apple.png');
+    background-size:100% 100%;
+}
+
+.loser{
+    display: none;
+    width: 100%;
+    height: 1000px;
+    z-index: 999;
+    position:absolute;
+}
+.con{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url('../image/startP.jpg');
+    background-size:100% 100%;
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+}
+.loserScore{
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 42%;
+    left: 40%;
+    color: #222;
+    font-size: 30px;
+    font-weight: bold;
+}
+.close{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 40px;
+    width: 40px;
+    background-image: url('../image/closeBtn.png');
+    background-size:100% 100%;
+    cursor: pointer;
+
+}
